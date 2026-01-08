@@ -49,3 +49,45 @@ Komut çalıştırırsın
 Dosya sistemi vardır
 
 📌 Açılmış işletim sistemi gibi
+
+2️⃣ Bandit nedir?
+
+Python için SAST tool
+
+OWASP Top 10’a çok yakın
+
+Bandit scan
+bandit -r . -ll
+
+Ne demek?
+
+-r . → tüm projeyi tara
+
+-ll → low severity bile raporla
+
+📌 DevSecOps’ta hiçbir şey görmezden gelinmez
+
+
+ADIM 6 — DAST (Dynamic Application Security Testing)
+
+SAST = koda bakar
+DAST = çalışan uygulamaya saldırır
+
+
+OWASP ZAP nedir?
+
+OWASP’ın resmi DAST aracı
+
+Web uygulamalarına saldırır
+
+Junior–Mid DevSecOps’ta çok güçlü CV maddesi
+
+ZAP ne yapıyor?
+
+Endpoint’leri tarar
+
+Input validation
+
+Header’lar
+
+XSS / Injection / Misconfig

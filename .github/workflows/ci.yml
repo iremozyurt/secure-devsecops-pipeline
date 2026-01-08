@@ -24,7 +24,8 @@ jobs:
 
     - name: Run Bandit SAST
       run: |
-        bandit -r . -ll --severity-level high
+        bandit -r . --severity-level high
+
 
     - name: Build Docker image
       run: |
