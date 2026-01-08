@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    container_name: vulnerable_app
+    ports:
+      - "5000:5000"
+
+  zap:
+    image: ghcr.io/zaproxy/zaproxy:stable
+    depends_on:
+      - app
+    command: zap-baseline.py -t http://app:5000
