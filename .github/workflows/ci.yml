@@ -36,6 +36,13 @@ jobs:
         docker run -d -p 5000:5000 --name app devsecops-test
         sleep 10
 
+    - name: Start Flask App
+      run: |
+      pip install -r requirements.txt
+      python app.py &
+      sleep 10
+
+
     - name: OWASP ZAP DAST scan
       uses: zaproxy/action-baseline@v0.10.0
       with:
