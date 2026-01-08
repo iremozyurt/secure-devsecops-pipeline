@@ -12,3 +12,8 @@ services:
     depends_on:
       - app
     command: zap-baseline.py -t http://app:5000
+
+command: >
+  zap-baseline.py
+  -t http://app:5000
+  -I
