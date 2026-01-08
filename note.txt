@@ -1,0 +1,51 @@
+Bizim senaryo:
+1️⃣ Zafiyetli kod
+2️⃣ CI/CD pipeline
+3️⃣ Security tool yakalar
+4️⃣ Biz fixleriz
+
+
+-> Dockerfile = “Bu uygulamanın nasıl bir ortamda çalışacağını tarif eden reçete”
+🔹 FROM python:3.10-slim
+
+Debian tabanlı Linux
+Python yüklü
+Küçük boyutlu
+👉 “Benim ortamım Linux + Python” diyorsun
+
+WORKDIR /app
+Container içinde /app klasörü oluşturur
+Bundan sonra tüm komutlar burada çalışır
+
+COPY . .
+Host’taki dosyaları container’a kopyalar
+app.py artık container içinde
+
+RUN pip install flask
+Flask kuruluyor
+Image build aşamasında
+
+
+🧱 IMAGE NEDİR?
+
+Hazır kalıp
+
+Read-only
+
+Build edilir
+
+Çalışmaz
+
+📌 ISO dosyası gibi düşün
+
+🚀 CONTAINER NEDİR?
+
+Image’in çalışan hali
+
+RAM + CPU kullanır
+
+Komut çalıştırırsın
+
+Dosya sistemi vardır
+
+📌 Açılmış işletim sistemi gibi
